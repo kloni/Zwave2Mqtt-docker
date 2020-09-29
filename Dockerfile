@@ -23,7 +23,7 @@ RUN apk --no-cache add \
     make
 
 WORKDIR /root
-RUN git clone https://github.com/OpenZWave/open-zwave.git 
+RUN git clone https://github.com/kloni/open-zwave.git 
 RUN git clone https://github.com/OpenZWave/Zwave2Mqtt.git 
 
 WORKDIR /root/open-zwave
@@ -49,8 +49,7 @@ RUN rm -rf \
     pkg \
     src \
     static \
-    stylesheets \
-    views 
+    stylesheets
 
 # ----------------
 # STEP 2:
